@@ -1,0 +1,95 @@
+/* ==========================================================================
+   TELA INICIAL (INDEX.HTML) - COM DETALHES MARCANTES EM ROSÉ
+   ========================================================================== */
+body.pagina-inicial {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FAF7F5 0%, #F2DFE2 50%, #E8C5C8 100%);
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-container {
+    max-width: 700px;
+    width: 100%;
+}
+
+.hero-content {
+    background: #FFFFFF;
+    padding: 60px 40px;
+    border-radius: 24px;
+    /* Borda e sombra marcantes em tom Rosé */
+    border: 2px solid #C28D92;
+    box-shadow: 0 15px 35px rgba(194, 141, 146, 0.3);
+    position: relative;
+}
+
+.subtitulo-hero {
+    display: block;
+    font-family: var(--fonte-corpo);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #C28D92;
+    margin-bottom: 12px;
+}
+
+.titulo-hero {
+    font-family: var(--fonte-titulo);
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #1A1A1A;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* Linha decorativa rosé abaixo do nome */
+.titulo-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #C28D92;
+    border-radius: 2px;
+}
+
+.descricao-hero {
+    font-family: var(--fonte-corpo);
+    font-size: 1rem;
+    color: #5A5A5A;
+    margin-top: 16px;
+    margin-bottom: 36px;
+    font-weight: 400;
+}
+
+/* Botão preenchido em Rosé */
+.btn-hero {
+    display: inline-block;
+    padding: 14px 42px;
+    background-color: #C28D92 !important;
+    color: #FFFFFF !important;
+    font-family: var(--fonte-corpo);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(194, 141, 146, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #A36F74 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(194, 141, 146, 0.5);
+}

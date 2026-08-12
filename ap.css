@@ -1,0 +1,214 @@
+/* ==========================================================================
+   PALETA DE CORES ROSÉ E ELEGANTE
+   ========================================================================== */
+:root {
+    --fundo-etapa-1: #FAF7F5;      /* Creme suave */
+    --fundo-etapa-2: #F3EAE8;      /* Areia Rosado Elegante */
+    --fundo-etapa-3: #9E6F74;      /* Rosé Queimado Intermediário */
+    --fundo-etapa-4: #F8F3F1;      /* Areia Claro */
+    
+    --cor-texto-escuro: #1A1A1A;
+    --cor-texto-claro: #FFFFFF;
+    --cor-texto-mutado: #5A5A5A;
+    
+    /* TOM PRINCIPAL ROSÉ */
+    --cor-destaque: #C28D92;       /* Rosé Gold Elegante */
+    
+    --fonte-titulo: 'Cormorant Garamond', serif;
+    --fonte-corpo: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.pagina-sobre {
+    font-family: var(--fonte-corpo);
+    color: var(--cor-texto-escuro);
+    line-height: 1.7;
+    background-color: var(--fundo-etapa-1);
+}
+
+/* ==========================================================================
+   CONTROLE DE IMAGENS E BANNERS
+   ========================================================================== */
+.container-imagem {
+    width: 100%;
+    max-height: 480px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.img-padrao {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Banner Horizontal Ampliado */
+.secao-banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-horizontal-wrapper {
+    width: 100%;
+    height: 700px;
+}
+
+.img-banner-horizontal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ==========================================================================
+   SEÇÕES & ETAPAS DE CONTEÚDO
+   ========================================================================== */
+
+/* 1. Quem Eu Sou */
+.secao-quem-sou {
+    background-color: var(--fundo-etapa-1);
+}
+
+/* 2. Red Kids */
+.secao-red-kids {
+    background-color: var(--fundo-etapa-2);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.secao-red-kids .container-imagem {
+    border: 3px solid #E8C5C8;
+    box-shadow: 0 15px 35px rgba(194, 141, 146, 0.25);
+}
+
+.secao-red-kids strong {
+    color: var(--cor-destaque);
+}
+
+/* Etiqueta / Badge Rosé */
+.badge-rose {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #E8C5C8;
+    color: #4A2E32;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 20px;
+}
+
+/* 3. Liderança & Adolescentes (Rosé Queimado / Destaque) */
+.secao-adolescentes {
+    background-color: var(--fundo-etapa-3);
+    color: #FFFFFF;
+}
+
+.secao-adolescentes .titulo-secao {
+    color: #FFFFFF;
+}
+
+.secao-adolescentes .lead {
+    color: #F6E4E6;
+}
+
+.secao-adolescentes .texto-secao {
+    color: #F8ECEE;
+}
+
+/* 4. Carreira Profissional */
+.secao-carreira {
+    background-color: var(--fundo-etapa-4);
+}
+
+/* ==========================================================================
+   CARD DE OBJETIVOS (FUNDO ROSÉ)
+   ========================================================================== */
+.card-carreira {
+    background-color: #F8ECEE !important;
+    border: 1px solid #E8C5C8 !important;
+    box-shadow: 0 12px 35px rgba(194, 141, 146, 0.18) !important;
+    border-radius: 20px;
+}
+
+.box-objetivo {
+    background-color: #FFFFFF !important;
+    border-left: 4px solid var(--cor-destaque) !important;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+/* ==========================================================================
+   TIPOGRAFIA & BOTÕES
+   ========================================================================== */
+.titulo-secao {
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.titulo-secao::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--cor-destaque);
+}
+
+.lead {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--cor-destaque);
+    font-style: italic;
+}
+
+.texto-secao {
+    font-size: 0.98rem;
+    color: var(--cor-texto-mutado);
+}
+
+/* Botões */
+.btn-custom {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: var(--cor-destaque);
+    color: #FFFFFF !important;
+    font-family: var(--fonte-corpo);
+    font-size: 0.88rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #A36F74;
+    transform: translateY(-2px);
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 991px) {
+    .container-imagem, .img-padrao {
+        height: 320px;
+    }
+    
+    .banner-horizontal-wrapper {
+        height: 400px;
+    }
+}
